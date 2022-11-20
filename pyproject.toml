@@ -1,11 +1,12 @@
 [build-system]
-requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
 
 [project]
+dependencies = [
+  "requests",
+  "requests_oauthlib",
+  'importlib-metadata; python_version<"3.8"',
+]
 name = "message_senders"
 version = "0.0.1"
-dependencies = [
-    "requests",
-    'importlib-metadata; python_version<"3.8"',
-]
