@@ -6,6 +6,7 @@ requires = ["setuptools"]
 dependencies = [
   "requests",
   "requests_oauthlib",
+  "pyhumps",
   'importlib-metadata; python_version<"3.8"',
 ]
 name = "message_senders"
