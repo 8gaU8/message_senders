@@ -1,6 +1,0 @@
-requests
-requests_oauthlib
-pyhumps
-
-[:python_version < "3.8"]
-importlib-metadata
