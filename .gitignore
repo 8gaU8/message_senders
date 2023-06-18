@@ -1,5 +1,4 @@
 *.pyc
 venv
 dist
-dist
-venv
+*.json

@@ -24,7 +24,7 @@ class BaseSender(ABC):
         class_name_snake_case = decamelize(self.__class__.__name__)
         class_prefix = "_".join(class_name_snake_case.split("_")[:-1])
 
-        self.config_file = config_dir / (class_prefix + "_config.json")
+        self.config_file = config_dir / (class_prefix + ".json")
 
         if not self.config_file.exists() and self.needs_config:
             raise FileNotFoundError(str(self.config_file))
